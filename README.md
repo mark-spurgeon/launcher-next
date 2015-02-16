@@ -12,7 +12,7 @@ Dependencies
 * python-qt4     
 * python-xlib     
 * python-wnck
-* python-gtk2
+* python-gtk2(for icons --')
 * python-xdg
 * python-jinja2
 * python-notify2
