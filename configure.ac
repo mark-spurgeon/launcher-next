@@ -9,11 +9,9 @@ AC_CONFIG_FILES([Makefile
                 src/duck/launcher/Makefile 
                 src/duck/settings/Makefile 
                 data/Makefile 
-                data/duck-launcher/Makefile 
-                data/duck-launcher/icons/Makefile 
                 data/duck-launcher/icons/default/Makefile
                 data/duck-launcher/plugins/files/Makefile
                 data/duck-launcher/plugins/plugins/Makefile
-                data/duck-launcher/plugins/Makefile])
+                data/icons/hicolor/scalable/apps/Makefile ])
 
 AC_OUTPUT

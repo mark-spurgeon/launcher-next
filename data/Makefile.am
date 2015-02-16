@@ -1,1 +1,2 @@
-SUBDIRS=duck-launcher
+SUBDIRS=duck-launcher \
+        icons
