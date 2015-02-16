@@ -1,0 +1,5 @@
+
+
+def getDataDir():
+	data= "@datadir@"
+	return data

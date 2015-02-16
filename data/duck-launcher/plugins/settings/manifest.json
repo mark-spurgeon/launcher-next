@@ -1,0 +1,10 @@
+{
+	"name":"Settings [ CONCEPT ]",
+	"version":"0.3",
+	"author":"Mark Spurgeon <theduck.dev@gmail.com>",
+	"modules":[
+	"Jinja2"
+	],
+	"background-color":"rgb(30,30,30)",
+	"foreground-color":"#ffffff"
+}

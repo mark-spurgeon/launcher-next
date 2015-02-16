@@ -1,0 +1,16 @@
+do_substitution = sed -e 's,[@]pythondir[@],$(pythondir),g' \
+	-e 's,[@]PACKAGE[@],$(PACKAGE),g' \
+	-e 's,[@]VERSION[@],$(VERSION),g' \
+	-e 's,[@]datadir[@],$(datadir),g'
+
+datadir.py: datadir.py.in Makefile
+	$(do_substitution) < $(srcdir)/datadir.py.in > datadir.py
+
+ducklauncher_PYTHON = \
+	datadir.py \
+	__init__.py \
+	launcher/Main.py \
+	launcher/Main.py \
+	launcher/Main.py \
+	launcher/Main.py \
+	launcher/Main.py \

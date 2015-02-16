@@ -1,0 +1,2 @@
+#! /bin/bash
+python -O $(pythondir)/duck/launcher/Main.py

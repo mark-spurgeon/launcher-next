@@ -1,0 +1,11 @@
+{
+	"name":"Plugin Store",
+	"description": "Install, uninstall and update plugins for Duck Launcher",
+	"version":"0.1",
+	"author":"Mark Spurgeon <theduck.dev@gmail.com>",
+	"modules":[
+	"Jinja2"
+	],
+	"background-color":"rgb(30,30,30)",
+	"foreground-color":"#ffffff"
+}
