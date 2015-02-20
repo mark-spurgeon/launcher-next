@@ -2,11 +2,12 @@ import sys
 sys.dont_write_bytecode=True
 from jinja2 import Template
 import os
-sys.path.append(os.path.abspath("/usr/lib/duck_launcher/"))
-import Plugins
+
+from duck import datadir
+from duck.launcher import Plugins
 #Search event
 def Search(query, color=None,font=None):
-	static="/usr/share/duck-launcher/plugins/plugins/"
+	static="{}plugins/plugins/".format(datadir.getDir())
 	s = str(open("{}plugins.html".format(static),"r").read())
 	rep=Plugins.Repo()
 	plugins=rep.getAllApps()

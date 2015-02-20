@@ -183,7 +183,7 @@ class Launcher(QtGui.QMainWindow):
 					y_pos=i*ICO_TOP+after_dapps
 					qp.drawRect(0,y_pos-2,self.pos_x+7,ICO_TOP-1)
 					QtGui.QIcon(w["icon"]).paint(qp, 0, y_pos,self.pos_x+7,ICO_TOP-5)	
-
+			'''
 			#3 dots
 			qp.setPen(QtCore.Qt.NoPen)
 			qp.setBrush(QtGui.QColor(self.font_color[0],self.font_color[1],self.font_color[2]))
@@ -199,6 +199,7 @@ class Launcher(QtGui.QMainWindow):
 			qp.drawRect((self.pos_x+7)/2-2*s,top_r,s,s)
 			qp.drawRect((self.pos_x+7)/2-s/2,top_r,s,s)
 			qp.drawRect((self.pos_x+7)/2+s,top_r,s,s)
+			'''
 			#icon = QtGui.QIcon("/usr/share/duck-launcher/default-theme/sys.svg")
 			#icon.paint(qp,10,self.s_height-self.HALF_OPEN_POS+8,self.HALF_OPEN_POS-15,self.HALF_OPEN_POS-15)
 		##
@@ -397,9 +398,11 @@ class Launcher(QtGui.QMainWindow):
 						self.drawAppRect=True
 
 			#
+			'''
 			if self.s_height-self.HALF_OPEN_POS-5<y_m:
 				self.appRect=QtCore.QRectF(0,self.s_height-self.HALF_OPEN_POS,self.pos_x+7,self.HALF_OPEN_POS)
 				self.drawAppRect=True
+			'''
 		'''
 		if self.current_state=="open" and self.activity=="apps" and self.plugin==False:
 			for i, app in enumerate(self.allApps):
@@ -597,6 +600,7 @@ class Launcher(QtGui.QMainWindow):
 					if self.ICO_TOP*3<y_m<self.ICO_TOP*4:
 						self.activity="star"
 						self.open_it()
+					'''
 					if  self.s_height-self.HALF_OPEN_POS-5<y_m:
 						if self.sys_win.isHidden():
 							#self.open_win.close()
@@ -604,6 +608,7 @@ class Launcher(QtGui.QMainWindow):
 							self.sys_win.show()
 						elif self.sys_win.isHidden()==False:
 							self.sys_win.close()
+					'''
 
 				for i,a in enumerate(self.dock_apps):
 					if self.OPEN_STATE_TOP+self.ICO_TOP*i+10<y_m<self.OPEN_STATE_TOP+self.ICO_TOP*(i+1)+10:
